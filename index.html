@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Miracle Care Pharmacy | Your Trusted Healthcare Partner</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <style type="text/tailwindcss">
+        :root {
+            --primary: #FD9423;
+            --primary-dark: #e67e0e;
+            --primary-light: #fff4e6;
+            --secondary: #1EE1E7;
+            --secondary-dark: #15b8bd;
+            --secondary-light: #e6fcfd;
+        }
+        @layer base {
+            body {
+                @apply font-['DM_Sans'] antialiased bg-white text-slate-900;
+            }
+            h1 {
+                font-weight: 700;
+                line-height: 1.1 !important;
+            }
+            h2, h3, h4, h5, h6 {
+                font-weight: 700;
+                line-height: 1.3;
+            }
+            p, li, span {
+                line-height: 1.75;
+            }
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #FD9423 0%, #e67e0e 100%);
+        }
+        .secondary-gradient {
+            background: linear-gradient(135deg, #1EE1E7 0%, #15b8bd 100%);
+        }
+        .timeline-dot::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: #e2e8f0;
+            left: 50%;
+            top: 2rem;
+            z-index: -1;
+        }
+        .timeline-item:last-child .timeline-dot::after {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="selection:bg-orange-100 selection:text-orange-900">
+    <!-- Top Header Bar -->
+    <div class="bg-black text-white py-2 text-center text-sm">
+        <p class="font-bold">MIRACLE CARE PHARMACY - "WE WILL GO THE EXTRA MILE FOR YOU"</p>
+    </div>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="l.png" alt="Miracle Care Pharmacy Logo" class="h-12 w-auto" />
+                <span class="text-2xl font-bold tracking-tight text-slate-900">Miracle Care Pharmacy<span
+                        style="color: #FD9423;">.</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-bold text-slate-600 hover:text-[#FD9423] transition-colors"
+                    href="#about">About</a>
+                <a class="text-sm font-bold text-slate-600 hover:text-[#FD9423] transition-colors"
+                    href="#services">Services</a>
+                <a class="text-sm font-bold text-slate-600 hover:text-[#FD9423] transition-colors"
+                    href="#specialties">Specialties</a>
+                <a class="text-sm font-bold text-slate-600 hover:text-[#FD9423] transition-colors"
+                    href="#contact">Contact</a>
+                <button
+                    class="bg-black hover:bg-[#FD9423] text-white px-7 py-3 rounded-full text-sm font-bold transition-all shadow-xl shadow-slate-200">Call
+                    Us Now</button>
+            </div>
+        </div>
+    </nav>
+    <header class="relative bg-white pt-10 pb-20 lg:pt-20 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex-1 space-y-8 z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 text-orange-700 text-xs font-bold uppercase tracking-widest border border-orange-100">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                    </span>
+                    FREE DELIVERY • SAME DAY SERVICE
+                </div>
+                <h1 class="text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight" style="line-height: 1.1;">
+                    Caring for Your<br /><span style="color: #FD9423;">Health</span> & <span
+                        style="color: #1EE1E7;line-height: 1.1;">Wellness.</span>
+                </h1>
+                <p class="text-xl text-slate-500 max-w-xl leading-relaxed">
+                    Full service pharmacy providing exceptional pharmaceutical care with family-like service.
+                    Specializing in dermatology, diabetes management, elderly care, psychiatric medicine, HIV care, and
+                    vaccinations.
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <button
+                        class="primary-gradient text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-orange-200 hover:scale-[1.02] active:scale-[0.98] transition-all">Visit
+                        Our Pharmacy</button>
+                    <button
+                        class="bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg border-2 border-slate-200 hover:border-orange-200 hover:bg-orange-50/30 transition-all">Our
+                        Services</button>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div
+                    class="absolute -top-12 -right-12 w-64 h-64 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob">
+                </div>
+                <div
+                    class="absolute -bottom-12 -left-12 w-64 h-64 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000">
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-4 bg-orange-500/10 rounded-[2.5rem] rotate-3 transition-transform group-hover:rotate-1">
+                    </div>
+                    <img class="relative w-full aspect-[4/5] object-cover rounded-[2rem] shadow-2xl z-10"
+                        alt="Professional pharmacist providing care"
+                        src="https://img.freepik.com/free-photo/pharmacist-arranging-medicine-pharmacy_23-2152008073.jpg?t=st=1770840803~exp=1770844403~hmac=13c065a7ec5bd73da3b08624703ed0fa544b8a6474cdd4bb5b847b8975682ef3&w=2000" />
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-2xl z-20 border border-slate-50 max-w-[200px]">
+                        <div style="color: #FD9423;" class="font-bold text-3xl mb-1">10 Min</div>
+                        <div class="text-sm font-bold text-slate-500 leading-tight">Medications Ready</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features Banner -->
+    <section class="bg-gradient-to-r from-orange-50 to-cyan-50 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center"
+                        style="background-color: #FD942320;">
+                        <span class="material-icons" style="color: #FD9423;">local_shipping</span>
+                    </div>
+                    <p class="text-sm font-bold text-slate-700 leading-tight">FREE<br />DELIVERY</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center"
+                        style="background-color: #1EE1E720;">
+                        <span class="material-icons" style="color: #1EE1E7;">payments</span>
+                    </div>
+                    <p class="text-sm font-bold text-slate-700 leading-tight">SAME<br />COPAY</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center"
+                        style="background-color: #FD942320;">
+                        <span class="material-icons" style="color: #FD9423;">favorite</span>
+                    </div>
+                    <p class="text-sm font-bold text-slate-700 leading-tight">FAMILY-LIKE<br />SERVICE</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center"
+                        style="background-color: #1EE1E720;">
+                        <span class="material-icons" style="color: #1EE1E7;">vaccines</span>
+                    </div>
+                    <p class="text-sm font-bold text-slate-700 leading-tight">VACCINATIONS</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center"
+                        style="background-color: #FD942320;">
+                        <span class="material-icons" style="color: #FD9423;">receipt_long</span>
+                    </div>
+                    <p class="text-sm font-bold text-slate-700 leading-tight">MANUFACTURER<br />COUPONS</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center"
+                        style="background-color: #1EE1E720;">
+                        <span class="material-icons" style="color: #1EE1E7;">price_check</span>
+                    </div>
+                    <p class="text-sm font-bold text-slate-700 leading-tight">BEAT ALL<br />PRICING</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-slate-50" id="about">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-start">
+                <div>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">About <span
+                            style="color: #FD9423;">Miracle Care</span> Pharmacy</h2>
+                    <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                        Located in the heart of Santa Clarita, Miracle Care Pharmacy is dedicated to providing
+                        personalized pharmaceutical care and health solutions. We specialize in various healthcare
+                        needs, from dermatological products to diabetes management and specialized medication therapies.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                            <div class="text-3xl font-bold mb-2" style="color: #FD9423;">100%</div>
+                            <div class="text-sm font-bold text-slate-500 uppercase tracking-wider">Fast. Safe. Reliable.</div>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                            <div class="text-3xl font-bold mb-2" style="color: #1EE1E7;">100%</div>
+                            <div class="text-sm font-bold text-slate-500 uppercase tracking-wider">Patient Focused</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-12">
+                    <div class="timeline-item flex gap-8">
+                        <div class="relative timeline-dot">
+                            <div class="w-12 h-12 rounded-full text-white flex items-center justify-center font-bold z-10 relative shadow-lg shadow-orange-200"
+                                style="background-color: #FD9423;">
+                                <span class="material-icons">local_pharmacy</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Expert Care</h4>
+                            <p class="text-slate-500 leading-relaxed">We provide specialized pharmaceutical services
+                                tailored to your unique health needs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item flex gap-8">
+                        <div class="relative timeline-dot">
+                            <div class="w-12 h-12 rounded-full text-white border-2 flex items-center justify-center font-bold z-10 relative"
+                                style="background-color: white; color: #FD9423; border-color: #FD9423;">
+                                <span class="material-icons">favorite</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Compassionate Service</h4>
+                            <p class="text-slate-500 leading-relaxed">Our team treats every patient with care, respect,
+                                and personalized attention.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item flex gap-8">
+                        <div class="relative timeline-dot">
+                            <div class="w-12 h-12 rounded-full text-white border-2 flex items-center justify-center font-bold z-10 relative"
+                                style="background-color: white; color: #1EE1E7; border-color: #1EE1E7;">
+                                <span class="material-icons">verified</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Quality Assurance</h4>
+                            <p class="text-slate-500 leading-relaxed">We ensure the highest standards in medication
+                                safety and pharmaceutical excellence.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item flex gap-8">
+                        <div class="relative timeline-dot">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold z-10 relative"
+                                style="background-color: #e6fcfd; color: #1EE1E7;">
+                                <span class="material-icons">psychology</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Specialized Knowledge</h4>
+                            <p class="text-slate-500 leading-relaxed">Our pharmacists are experts in complex medication
+                                therapies and patient counseling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white" id="services">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="font-bold tracking-[0.2em] uppercase text-xs" style="color: #FD9423;">Our Services</span>
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6">Comprehensive Pharmacy Solutions
+                </h2>
+                <p class="text-slate-500 text-lg">We offer a wide range of pharmaceutical services designed to meet all
+                    your healthcare needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group relative p-12 bg-white border-2 border-slate-50 rounded-[2.5rem] transition-all duration-500 hover:shadow-2xl shadow-orange-100"
+                    style="border-color: #FD942330;">
+                    <div
+                        class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#FD9423] transition-colors">
+                        <span class="material-symbols-outlined text-3xl group-hover:text-white"
+                            style="color: #FD9423;">medication</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Prescription Services</h3>
+                    <p class="text-slate-500 leading-relaxed text-lg mb-8">Fast, accurate prescription filling with
+                        personalized medication counseling and drug interaction monitoring.</p>
+                    <a class="inline-flex items-center font-bold gap-2 group-hover:gap-4 transition-all"
+                        style="color: #FD9423;" href="#">
+                        Learn more <span class="material-icons text-lg">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="group relative p-12 bg-white border-2 border-slate-50 rounded-[2.5rem] transition-all duration-500 hover:shadow-2xl shadow-cyan-100"
+                    style="border-color: #1EE1E730;">
+                    <div
+                        class="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1EE1E7] transition-colors">
+                        <span class="material-symbols-outlined text-3xl group-hover:text-white"
+                            style="color: #1EE1E7;">vaccines</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Injections & Immunizations</h3>
+                    <p class="text-slate-500 leading-relaxed text-lg mb-8">Comprehensive injection services including
+                        vaccines, immunizations, and specialty injectable medications.</p>
+                    <a class="inline-flex items-center font-bold gap-2 group-hover:gap-4 transition-all"
+                        style="color: #1EE1E7;" href="#">
+                        Explore services <span class="material-icons text-lg">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="group relative p-12 bg-white border-2 border-slate-50 rounded-[2.5rem] transition-all duration-500 hover:shadow-2xl shadow-cyan-100"
+                    style="border-color: #1EE1E730;">
+                    <div
+                        class="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1EE1E7] transition-colors">
+                        <span class="material-symbols-outlined text-3xl group-hover:text-white"
+                            style="color: #1EE1E7;">monitor_heart</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Health Monitoring</h3>
+                    <p class="text-slate-500 leading-relaxed text-lg mb-8">Blood pressure monitoring, diabetes
+                        screening, and ongoing health assessment services.</p>
+                    <a class="inline-flex items-center font-bold gap-2 group-hover:gap-4 transition-all"
+                        style="color: #1EE1E7;" href="#">
+                        View monitoring services <span class="material-icons text-lg">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="group relative p-12 bg-white border-2 border-slate-50 rounded-[2.5rem] transition-all duration-500 hover:shadow-2xl shadow-orange-100"
+                    style="border-color: #FD942330;">
+                    <div
+                        class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#FD9423] transition-colors">
+                        <span class="material-symbols-outlined text-3xl group-hover:text-white"
+                            style="color: #FD9423;">psychology_alt</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Medication Therapy Management</h3>
+                    <p class="text-slate-500 leading-relaxed text-lg mb-8">Expert consultation on medication
+                        optimization, side effect management, and treatment adherence.</p>
+                    <a class="inline-flex items-center font-bold gap-2 group-hover:gap-4 transition-all"
+                        style="color: #FD9423;" href="#">
+                        Consult with us <span class="material-icons text-lg">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-slate-900 py-24 text-white" id="specialties">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="lg:w-1/2">
+                    <h2 class="text-5xl font-bold leading-tight mb-8">Our Areas of <br /><span
+                            style="color: #FD9423;">Specialization.</span></h2>
+                    <p class="text-xl text-slate-400 leading-relaxed mb-12">Miracle Care Pharmacy provides expert care
+                        in specialized therapeutic areas to support your unique health needs.</p>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                                style="background-color: #FD942320;">
+                                <span class="material-symbols-outlined" style="color: #FD9423;">dermatology</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Dermatology & Skin Care</h4>
+                                <p class="text-slate-400 leading-relaxed">Specialized skin care products and treatments
+                                    for various dermatological conditions.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                                style="background-color: #1EE1E720;">
+                                <span class="material-symbols-outlined" style="color: #1EE1E7;">bloodtype</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Diabetes Care & Management</h4>
+                                <p class="text-slate-400 leading-relaxed">Complete diabetes supplies, medications, and
+                                    expert guidance for optimal glucose control.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                                style="background-color: #FD942320;">
+                                <span class="material-symbols-outlined" style="color: #FD9423;">elderly</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Elderly Medication Management</h4>
+                                <p class="text-slate-400 leading-relaxed">Personalized medication packaging and
+                                    management for senior patients.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                                style="background-color: #1EE1E720;">
+                                <span class="material-symbols-outlined" style="color: #1EE1E7;">psychiatry</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Psychiatric Medicine</h4>
+                                <p class="text-slate-400 leading-relaxed">Expert handling of psychiatric medications
+                                    with confidential and compassionate care.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                                style="background-color: #FD942320;">
+                                <span class="material-symbols-outlined" style="color: #FD9423;">health_and_safety</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">HIV Medicine</h4>
+                                <p class="text-slate-400 leading-relaxed">Specialized HIV treatment and antiretroviral
+                                    therapy with privacy and respect.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="rounded-[3rem] p-1 shadow-2xl" style="background-color: #FD9423;">
+                        <img class="relative w-full h-[500px] object-cover rounded-[2.9rem] grayscale hover:grayscale-0 transition-all duration-700"
+                            alt="Pharmacy medication management"
+                            src="https://img.freepik.com/free-photo/closeup-view-pharmacist-hand-taking-medicine-box-from-shelf-drug-store_342744-320.jpg?t=st=1770841437~exp=1770845037~hmac=00b7351b556106d5fe93d67be36999fd6fadf704a47085a4736dcc3f94fe2fff&w=2000" />
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -left-10 bg-black p-8 rounded-3xl border border-slate-700 shadow-2xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center"
+                                style="background-color: #FD9423;">
+                                <span class="material-icons">verified_user</span>
+                            </div>
+                            <span class="text-2xl font-bold">Licensed & Certified</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">Fully accredited pharmacy with expert pharmacists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white overflow-hidden" id="reviews">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-16">
+                <div class="max-w-xl">
+                    <span class="font-bold tracking-[0.2em] uppercase text-xs"
+                        style="color: #FD9423;">Testimonials</span>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-4 leading-tight">Trusted by Our
+                        Community</h2>
+                </div>
+                <div class="flex gap-4">
+                    <button
+                        class="w-14 h-14 rounded-full border-2 border-slate-100 flex items-center justify-center transition-all"
+                        style="background-color: white; color: #FD9423; border-color: #FD942350;">
+                        <span class="material-icons">west</span>
+                    </button>
+                    <button
+                        class="w-14 h-14 rounded-full border-2 flex items-center justify-center bg-black text-white transition-all"
+                        style="border-color: #FD9423;">
+                        <span class="material-icons">east</span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-10 rounded-[2.5rem] relative">
+                    <div class="flex gap-1 mb-6">
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                    </div>
+                    <p class="text-lg text-slate-700 italic mb-8 leading-relaxed">"The staff at Miracle Care Pharmacy
+                        are incredibly knowledgeable and caring. They take the time to explain my medications and answer
+                        all my questions. Highly recommend!"</p>
+                    <div class="flex items-center gap-4 pt-8 border-t border-slate-200">
+                        <img class="w-14 h-14 rounded-full object-cover" alt="Client photo"
+                            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop" />
+                        <div>
+                            <h5 class="font-bold text-slate-900">Maria Rodriguez</h5>
+                            <p class="text-sm text-slate-500">Long-term Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-10 rounded-[2.5rem] relative border-2 shadow-2xl shadow-orange-100 transform scale-105 z-10"
+                    style="border-color: #FD9423;">
+                    <div class="flex gap-1 mb-6">
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                    </div>
+                    <p class="text-lg text-slate-700 italic mb-8 leading-relaxed">"Best pharmacy in Santa Clarita! They
+                        helped me manage my diabetes supplies and medications. The pharmacists are true professionals
+                        who genuinely care about their patients."</p>
+                    <div class="flex items-center gap-4 pt-8 border-t border-slate-200">
+                        <img class="w-14 h-14 rounded-full object-cover" alt="Client photo"
+                            src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=100&h=100&fit=crop" />
+                        <div>
+                            <h5 class="font-bold text-slate-900">James Thompson</h5>
+                            <p class="text-sm text-slate-500">Diabetes Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[2.5rem] relative">
+                    <div class="flex gap-1 mb-6">
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                        <span class="material-icons" style="color: #FD9423;">star</span>
+                    </div>
+                    <p class="text-lg text-slate-700 italic mb-8 leading-relaxed">"I trust Miracle Care Pharmacy with
+                        all my family's medication needs. Their skin care product selection is excellent, and they
+                        always have what we need in stock."</p>
+                    <div class="flex items-center gap-4 pt-8 border-t border-slate-200">
+                        <img class="w-14 h-14 rounded-full object-cover" alt="Client photo"
+                            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop" />
+                        <div>
+                            <h5 class="font-bold text-slate-900">Patricia Williams</h5>
+                            <p class="text-sm text-slate-500">Family Caregiver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 pb-24" id="contact">
+        <div class="primary-gradient rounded-[3.5rem] overflow-hidden p-8 lg:p-20 relative">
+            <div class="absolute inset-0 opacity-10 pointer-events-none"
+                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;">
+            </div>
+            <div class="relative z-10 flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2 text-white">
+                    <h2 class="text-4xl lg:text-4xl font-bold mb-8 leading-tight">Ready to Experience Exceptional Care?
+                    </h2>
+                    <p class="text-orange-50 text-xl leading-relaxed mb-10 opacity-90">Visit us today or contact our
+                        team to learn how we can help with your pharmaceutical needs.</p>
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="material-icons text-white">phone</span>
+                            </div>
+                            <div>
+                                <p class="text-sm opacity-75">Call Us</p>
+                                <p class="font-bold text-lg">(661) 222•2221</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="material-icons text-white">location_on</span>
+                            </div>
+                            <div>
+                                <p class="text-sm opacity-75">Visit Us</p>
+                                <p class="font-bold text-lg">24355 Lyons Ave unit 110<br />Santa Clarita, CA 91321</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                                <span class="material-icons text-white">check_circle</span>
+                            </div>
+                            <span class="font-bold">Expert Pharmacists</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                                <span class="material-icons text-white">check_circle</span>
+                            </div>
+                            <span class="font-bold">Specialized Care Services</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                                <span class="material-icons text-white">check_circle</span>
+                            </div>
+                            <span class="font-bold">Convenient Location</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-white p-8 lg:p-12 rounded-[2.5rem] shadow-2xl">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 ml-1">Full Name</label>
+                                    <input
+                                        class="w-full bg-slate-50 border-0 rounded-xl px-5 py-4 focus:ring-2 focus:bg-white transition-all text-slate-900 placeholder-slate-400"
+                                        placeholder="John Doe" type="text" style="--tw-ring-color: #FD9423;" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 ml-1">Phone Number</label>
+                                    <input
+                                        class="w-full bg-slate-50 border-0 rounded-xl px-5 py-4 focus:ring-2 focus:bg-white transition-all text-slate-900 placeholder-slate-400"
+                                        placeholder="(123) 456-7890" type="tel" style="--tw-ring-color: #FD9423;" />
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-slate-700 ml-1">Email Address</label>
+                                <input
+                                    class="w-full bg-slate-50 border-0 rounded-xl px-5 py-4 focus:ring-2 focus:bg-white transition-all text-slate-900 placeholder-slate-400"
+                                    placeholder="john@example.com" type="email" style="--tw-ring-color: #FD9423;" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-slate-700 ml-1">How can we help?</label>
+                                <textarea
+                                    class="w-full bg-slate-50 border-0 rounded-xl px-5 py-4 focus:ring-2 focus:bg-white transition-all text-slate-900 placeholder-slate-400"
+                                    placeholder="Tell us about your needs..." rows="3"
+                                    style="--tw-ring-color: #FD9423;"></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-black hover:bg-[#1EE1E7] text-white py-5 rounded-2xl font-bold text-lg transition-all shadow-xl hover:translate-y-[-2px]">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white pt-24 pb-12 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-8">
+                        <img src="l.png" alt="Miracle Care Pharmacy Logo" class="h-10 w-auto" />
+                        <span class="text-xl font-bold tracking-tight text-slate-900">Miracle Care Pharmacy<span
+                                style="color: #FD9423;">.</span></span>
+                    </div>
+                    <p class="text-slate-500 mb-8 leading-relaxed">
+                        Your trusted partner in health and wellness, providing exceptional pharmaceutical care to the
+                        Santa Clarita community.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 hover:text-[#FD9423] hover:bg-orange-50 transition-all"
+                            href="#">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.324v-21.35c0-.732-.593-1.325-1.325-1.325z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 hover:text-[#FD9423] hover:bg-orange-50 transition-all"
+                            href="#">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="font-bold text-slate-900 mb-8 uppercase tracking-widest text-xs">Specialties</h6>
+                    <ul class="space-y-4 text-sm font-bold text-slate-500">
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">Dermatology Products</a></li>
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">Diabetes Care</a></li>
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">Elderly Care</a></li>
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">Psychiatric Medicine</a></li>
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">HIV Medicine</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-bold text-slate-900 mb-8 uppercase tracking-widest text-xs">Quick Links</h6>
+                    <ul class="space-y-4 text-sm font-bold text-slate-500">
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">About Us</a></li>
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">Services</a></li>
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">Contact</a></li>
+                        <li><a class="hover:text-[#FD9423] transition-colors" href="#">Refill Prescription</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-bold text-slate-900 mb-8 uppercase tracking-widest text-xs">Contact Info</h6>
+                    <div class="space-y-4 text-sm text-slate-500">
+                        <p class="font-bold leading-relaxed">24355 Lyons Ave unit 110<br />Santa Clarita, CA 91321</p>
+                        <p class="font-bold">(661) 222•2221</p>
+                        <p class="text-xs text-slate-400 mt-6 leading-relaxed">Open Monday - Saturday<br />9:00 AM -
+                            6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between gap-6 text-xs text-slate-400 font-bold">
+                <p>Copyright © 2026 Miracle Care Pharmacy. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-[#FD9423] transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-[#FD9423] transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-[#FD9423] transition-colors" href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
